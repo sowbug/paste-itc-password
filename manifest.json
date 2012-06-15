@@ -1,0 +1,13 @@
+{
+  "name": "Paste ITC Password",
+  "description": "Allows pasting of passwords into login page of iTunes Connect",
+  "version": "0.1",
+  "manifest_version": 1,
+
+  "content_scripts": [
+    {
+      "matches": ["https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa"],
+      "js": ["fix-onpaste.js"]
+    }
+  ]
+}
